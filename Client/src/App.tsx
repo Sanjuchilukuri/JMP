@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Authentication from './components/unProtected/authentication/Authentication';
 import Home from './components/unProtected/home/Home';
-import Layout from './components/protected/shared/Layout/Layout';
+import Layout from './components/protected/Layout/Layout';
 
 function App() {
   

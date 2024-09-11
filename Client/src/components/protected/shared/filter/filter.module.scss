@@ -1,0 +1,75 @@
+  .filter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem ;
+    border-radius: 10px;
+    background-color: white;
+    gap: 1rem;
+
+    .filter{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .filter-label{
+            font-size: 16px;
+            color: #6c757d;
+        }
+    
+        .filter-select{
+            padding: .3rem;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: white;
+            color: #495057;
+            font-size: 16px;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
+    
+            &:hover{
+                border-color: #007bff;
+            }
+        }
+
+        .filter-input{
+            outline: none;
+            padding: 0.2rem 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: white;
+            color: #495057;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            width: 100%;
+    
+            &:hover{
+                border-color: #007bff;
+            }
+        }
+    }
+    .btns-wrapper{
+        display: flex;
+        gap: 1rem;
+        button{
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+        }
+        .btn-apply{
+            background-color: #28a745;
+        }
+        .btn-clear{
+            background-color: #dc3545;
+        }
+    }
+  
+  }

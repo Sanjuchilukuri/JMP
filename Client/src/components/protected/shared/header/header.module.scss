@@ -1,7 +1,4 @@
-.container{
-    width: 100%;
-    padding: 1rem 2rem;
-    .dashboard-header {
+.dashboard-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,11 +39,9 @@
           height: 20px;
           display: inline-block;
           margin-right: 5px;
-          background-image: url('../../../assets/addJob.svg');
+          background-image: url('../../../../assets/addJob.svg');
           background-size: cover;
         }
       }
     }
-  }
-
 }
