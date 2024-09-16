@@ -1,0 +1,21 @@
+/signup
+/signup with google
+
+/login
+/login with google
+
+/jobsapplied
+/interviews held
+/Applications by companies
+/applications by roles
+/applications by month
+/heatmap
+
+/updateprofile
+/deactivate account
+/changepassword
+
+/addjob
+/getjobs
+/getjob
+/updatejob

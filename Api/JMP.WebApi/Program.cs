@@ -5,7 +5,7 @@ namespace JMP.WebApi
 {
     public class Program
     {
-        private static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +18,12 @@ namespace JMP.WebApi
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
+
+            using( var scope = app.Services.CreateScope())
+            {
+                var dBInitializer = scope.ServiceProvider.GetRequiredService<DBInitializer>();
+                await dBInitializer.InitializeAsync();
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

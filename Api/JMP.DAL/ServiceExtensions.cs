@@ -17,6 +17,8 @@ namespace JMP.DAL
             {
                 options.UseSqlServer(configuration.GetConnectionString("localConnection"));
             });
+            
+            services.AddScoped<DBInitializer>();
         }
     }
 }
