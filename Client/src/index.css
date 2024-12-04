@@ -1,0 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'poppins';
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  &:active{
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,123 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    hr {
+        margin: 10px 0px 20px 0px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .file-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .profile {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid #333;
+            }
+
+            label {
+                margin-top: 10px;
+                cursor: pointer;
+                padding: 5px 10px;
+                color: #fff;
+                border-radius: 5px;
+                font-size: 0.9rem;
+            }
+
+            input[type='file'] {
+                display: none;
+            }
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            button {
+                margin-top: 1rem;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+
+            .change-password {
+                background-color: #007bff;
+                color: #fff;
+                margin-right: auto;
+            }
+
+
+            .deactivate-account {
+                background-color: #dc3545;
+                color: #fff;
+            }
+
+            input {
+                display: block;
+                width: 20rem;
+                padding: 8px;
+                border: none;
+                border-bottom: 1px solid #333;
+                border-radius: 4px;
+                outline: none;
+                font-size: 1rem;
+            }
+
+            input[disabled] {
+                background-color: #f5f5f5;
+                font-size: 1rem;
+            }
+        }
+
+       
+        
+        .button-group{
+            display: flex;
+            justify-content: flex-end;
+            width: 40rem;
+            margin-top: 1rem;
+            
+            button{
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+
+            .cancel {
+                background-color: #6c757d;
+                color: #fff;
+            }
+
+            .update {
+                background-color: #28a745;
+                color: #fff;
+                margin-left: 1rem;
+            }
+        }    
+    }
+}
